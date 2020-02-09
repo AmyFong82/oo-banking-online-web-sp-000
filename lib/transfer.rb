@@ -17,7 +17,6 @@ class Transfer
     sender = BankAccount.new(sender)
     receiver = BankAccount.new(receiver)
     sender.balance -= @amount
-    receiver.balance += @amount
   end
 
 end
