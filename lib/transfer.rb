@@ -1,3 +1,5 @@
+require "pry"
+
 class Transfer
   attr_accessor :status, :amount
   attr_reader :sender, :receiver
@@ -17,6 +19,7 @@ class Transfer
     sender = BankAccount.new(sender)
     receiver = BankAccount.new(receiver)
     sender.balance -= self.amount
+    binding.pry
   end
 
 end
