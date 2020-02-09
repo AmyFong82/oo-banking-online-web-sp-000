@@ -13,4 +13,7 @@ class Transfer
     self.sender.valid? and self.receiver.valid? ? true : false
   end
 
+  def execute_transaction(sender, receiver, amount)
+  end
+
 end
