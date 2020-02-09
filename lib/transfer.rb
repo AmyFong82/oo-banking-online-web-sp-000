@@ -16,8 +16,8 @@ class Transfer
   end
 
   def execute_transaction
-    sender = BankAccount.new(A)
-    receiver = BankAccount.new(B)
+    sender = BankAccount.new(amy)
+    receiver = BankAccount.new(bilal)
     sender.balance -= self.amount
     receiver.balance += self.amount
     binding.pry
