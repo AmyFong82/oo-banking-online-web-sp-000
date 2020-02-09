@@ -16,7 +16,7 @@ class Transfer
   def execute_transaction
     sender = BankAccount.new(sender)
     receiver = BankAccount.new(receiver)
-    sender.balance -= @amount
+    sender.balance -= self.amount
   end
 
 end
