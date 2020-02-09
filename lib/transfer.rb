@@ -19,6 +19,7 @@ class Transfer
     sender = BankAccount.new(sender)
     receiver = BankAccount.new(receiver)
     sender.balance -= self.amount
+    receiver.balance += self.amount
     binding.pry
   end
 
