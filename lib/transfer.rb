@@ -22,7 +22,7 @@ class Transfer
       self.status = "complete"
     else
       return
-    # binding.pry
+    end
   end
 
 end
